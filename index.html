@@ -1,0 +1,210 @@
+	<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SN Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/sketch.min.js"></script>
+		<script src="js/form.js"></script>	
+    	<script src="js/pageLoad.js"></script>
+
+        <script>
+			$(document).ready(function(e) {
+				$(".hover").each(function() {
+					var originalImg = $(this).attr("alt");
+					$(this).hover(
+						function(){ $(this).attr("src", "image/portfolio/" + originalImg +  "-2.png")},
+						function(){ $(this).attr("src", "image/portfolio/" + originalImg + "-1.png")}
+					);
+            	});
+				
+				$(window).load(function() {
+					setTimeout(function(){
+						$(".se-pre-con").fadeOut("slow");
+					}, 500);
+				});
+            });
+        </script>
+
+
+    </head>
+
+<body id="body">	
+    <div class="se-pre-con"></div>
+
+	<script src="js/particleAnim.js"></script>
+
+    <a href="#"><img src="image/Icon/Logo.svg" alt="logo" id="logo"/></a>
+     
+    <div id="home_name_text">Developer and game designer<br><span>SAMUEL NG</span></div>
+    <ul id="social_media">
+        <li><a target="_blank" href="https://www.facebook.com/Eclipsx"><img src="image/Icon/facebook2.png" alt="facebook"/></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/eclmist/"><img src="image/Icon/instagram19.png" alt="instagram"/></a></li>
+        <li><a target="_blank" href="https://twitter.com/EclMist"><img src="image/Icon/twitter.png" alt="twitter"/></a></li>
+        <li><a target="_blank" href="https://plus.google.com/u/0/110615512311419285245/"><img src="image/Icon/google-plus.png" alt="gplus"/></a></li>
+    </ul>
+
+    <nav id="desktop-nav">
+        <div class="navgroup">
+            <img src="image/Icon/About.png" alt="abouticon"/>
+            <a href="#about"><div class="ghostbtn">ABOUT<div class="arrow"></div></div></a>
+        </div><!--
+     --><div class="navgroup">
+            <img src="image/Icon/Projects.png" alt="projecticon"/>
+            <a href="#projects"><div class="ghostbtn">PROJECT<div class="arrow"></div></div></a>
+        </div><!--
+     --><div class="navgroup">
+            <img src="image/Icon/Contact.png" alt="contacticon"/>
+            <a href="#contact"><div class="ghostbtn">CONTACT<div class="arrow"></div></div></a>
+        </div>
+        <div id="slogan">Expect nothing less than perfection.</div>
+    </nav>
+   	<div id="mobile-slogan">Expect nothing less than perfection.</div>        
+	<div id="mobile-home-photo"><img src="image/about/photo.png" alt="photo" /></div>
+    <a href="#about" class="sidebtn"><div id="sideMenu1" class="sideMenu">
+    	<img src="image/Icon/About.png" alt="abouticon"/>
+        <span>About</span>
+        <span class="side-subtext">See what I like to do</span>
+    </div></a>
+    <a href="#projects" class="sidebtn"><div id="sideMenu2" class="sideMenu">
+    	<img src="image/Icon/Projects.png" alt="projecticon"/>
+        <span>Projects</span>
+        <span class="side-subtext">What I've been doing</span>
+    </div></a>
+    <a href="#contact" class="sidebtn"><div id="sideMenu3" class="sideMenu">
+    	<img src="image/Icon/Contact.png" alt="contacticon"/>  
+        <span>Contact</span>
+        <span class="side-subtext">Drop me a message</span>
+    </div></a>
+    
+    <div id="sidebar"></div>
+    
+	<div id="content-container">
+        <!-- PORTFOLIO -->
+        <article id="cont-portfolio" class="content">
+            <h1>PROJECTS</h1>
+            <h3>Some of my past projects are featured below</h3>
+            <div class="line"></div>
+            
+            <div class="proj-title"><h2>GLOOP</h2></div>
+            <div class="proj-img"><img class="hover" src="image/portfolio/game2-1.png" alt="game2"/></div>
+            <div class="proj-desc">    
+            	<p>Top down multiplayer battle arena game. Players collect items around the map to outsize and swallow their enemies.</p>
+            	<p>Unity3D network support</p>
+                <div class="ghostbtn ghostbtnraw detailbtn" id="game1">More Details</div>
+            </div>
+            
+            <div class="proj-title"><h2>Anesthesia</h2></div>
+            <div class="proj-img"><img class="hover" src="image/portfolio/game1-1.png" alt="game1"/></div>
+            <div class="proj-desc"> 
+            	<p>Story based puzzle platformer.</p>
+            	<p>Inspired by platformers such as Child of Light, Rayman Legends, and other simillar sidescrollers.</p>
+                <div class="ghostbtn ghostbtnraw detailbtn" id="game2">More Details</div>                
+            </div>
+
+            <div class="proj-title"><h2>Starblaze</h2></div>
+            <div class="proj-img"><img class="hover" src="image/portfolio/game3-1.png" alt="game3"/></div>
+            <div class="proj-desc"> 
+            	<p>Openworld 3D tower defence framework</p>
+            	<p>Players fly around to build and defend their base from incoming enemy waves.</p>
+                <div class="ghostbtn ghostbtnraw detailbtn" id="game3">More Details</div>
+            </div>
+            <div class="padding"></div>
+        </article>	
+        
+    <!-- ABOUT -->
+        <article id="cont-about" class="content">
+            <h1>ABOUT</h1>
+            <h3>A little background</h3>
+            <div class="line"></div>
+            <h2>My name is Samuel.</h2>
+            <div id="about-desc">
+			<p>I am a first year student (2015) in Singapore Polytechnic taking Diploma in Information Technology. I have been making games for close to 4 years now, with experiences with DirectX, XNA, Unreal and Unity3D.</p>
+
+			<p>I have made many games in the past, on both the Windows platform, as well as for Android. Some of these games are showcased in my portfolio page.</p>
+
+			<p>I am someone who loves to experiment with the tools that are avaliable to me, and I'm not afraid to try new things espicially when it comes to new game mechanics, design, as well as programming in general.</p>
+            
+            </div>
+            
+            <img id="about-photo" src="./image/about/photo.png" alt="photo"/>
+            <h3>Some stuff I'm familiar with:</h3>
+            <div id="skillchart">
+            	<img src="image/about/skills.png" alt="skillchart" />
+                <div class="skill-ball" id="ball1"><img src="./image/about/ball.png" alt="skillchart" /></div>
+	            <div class="skill-ball" id="ball2"><img src="./image/about/ball.png" alt="skillchart" /></div>                
+                <div class="skill-ball" id="ball3"><img src="./image/about/ball.png" alt="skillchart" /></div>                
+                <div class="skill-ball" id="ball4"><img src="./image/about/ball.png" alt="skillchart" /></div>                
+            </div>
+            <div class="padding"></div>
+        </article> 
+        
+    <!-- CONTACT -->
+		<article id="cont-contact" class="content">
+        	<h1>CONTACT</h1>
+            <h3>Lets get in touch</h3>
+            <div class="line"></div>
+			<table>
+				<tbody>
+					<tr>
+						<td>Email: </td>
+						<td class="padleft">Mist@kawaiidesu.org</td>
+					</tr>
+					<tr>
+						<td>Phone: </td>
+						<td class="padleft">+65 9820 0573</td>
+					</tr>
+					<tr>
+						<td>Address: </td>
+						<td class="padleft">Greenhollow, Moonwater Plains</td>
+					</tr>
+				</tbody>
+			</table>
+            
+            <ul id="contact-socialmedia">
+        <li><a target="_blank" href="https://www.facebook.com/Eclipsx"><img src="image/Icon/facebook2.png" alt="facebook"/></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/eclmist/"><img src="image/Icon/instagram19.png" alt="instagram"/></a></li>
+        <li><a target="_blank" href="https://twitter.com/EclMist"><img src="image/Icon/twitter.png" alt="twitter"/></a></li>
+        <li><a target="_blank" href="https://plus.google.com/u/0/110615512311419285245/"><img src="image/Icon/google-plus.png" alt="gplus"/></a></li>            </ul>
+
+			<h3>Alternatively, you can send me a quick message below!</h3>
+			<br/>
+            <form id="contact-form" method="post">
+                <label>
+                Name
+                <input type="text" name="username" id="nameinput"/>
+                </label>
+                <label>
+                Email
+                <input type="email" name="email" id="emailinput"/>
+                </label>
+                <label>
+                Phone
+                <input type="text" name="phone" id="phoneinput"/>
+                </label>
+                <label>
+                Message
+            	<textarea id="message" name="message" rows="4" cols="55"></textarea>
+                </label>
+
+                <input type="submit" id="submit" class="ghostbtn ghostbtnraw" value="Submit" />
+            </form>
+            <div class="padding"></div>
+		</article>
+        
+    <!-- PORTFOLIO GAME DETAIL -->
+        <article id="cont-detail" class="content">
+            <h1></h1>
+            <h3></h3>
+            <div class="line"></div>
+            <div id="video"></div>
+            <div id="detailed-desc"></div>
+            <div class="ghostbtn ghostbtnraw" id="backbtn">Back</div>
+        </article> 
+    </div>
+</body>
+</html>
