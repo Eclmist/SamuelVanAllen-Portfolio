@@ -410,6 +410,13 @@ p{
 	transition: all 0.2s ease-in-out;
 }
 
+#cont-loading
+{
+	position: relative;
+	left: 50%;
+	top: 50%;	
+}
+
 form label 
 {
 	font-size: 0.9em;
