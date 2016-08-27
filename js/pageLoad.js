@@ -251,45 +251,29 @@ $(document).ready(function () {
 	function RefreshContent()
 	{		
 		var elementToAmend = $("#content-container");
+		elementToAmend.empty();
 		
-		elementToAmend.children("article").each(function() {
-			$(this).css("opacity", 0);
-			$(this).css("display", "none");
-		});
-		
+		//Reseting Side menu background highlight color		
 		$(".sideMenu").each(function() {
 			$(this).css("background-color", "transparent");
 		});
-		
-		$("#cont-detail").css("opacity", 0);
-		$("#cont-detail").css("display", "none");
-		
-	
+			
 		switch(currentPage) {
 			case 0:
 				break;
 			case 1:
-				$("#content-container").empty();
-				$("#content-container").load("About.html");
+				elementToAmend.load("About.html");
+				$("#sideMenu1").css("background-color", "#58afd3");
 
-				//$("#cont-about").css("display", "inline-block");
 				//setTimeout(function() {$("#cont-about").css("opacity", 1);}, 10);	
-				//$("#sideMenu1").css("background-color", "#58afd3");
 				break;
 			case 2:
-				$("#content-container").empty();
-				$("#content-container").load("Projects.html");
-				//$("#cont-portfolio").css("display", "inline-block");
-				//setTimeout(function() {$("#cont-portfolio").css("opacity", 1);}, 10);	
-				//$("#sideMenu2").css("background-color", "#58afd3");		
+				elementToAmend.load("Projects.html");
+				$("#sideMenu1").css("background-color", "#58afd3");
 				break;	
 			case 3:
-				$("#content-container").empty();
-				$("#content-container").load("Contact.html");
-
-				//$("#cont-contact").css("display", "inline-block");
-				//setTimeout(function() {$("#cont-contact").css("opacity", 1);}, 10);	
-				//$("#sideMenu3").css("background-color", "#58afd3");
+				elementToAmend.load("Contact.html");
+				$("#sideMenu1").css("background-color", "#58afd3");
 				break;	
 			case 4:
 				$("#cont-detail").css("display", "inline-block");
