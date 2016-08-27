@@ -413,10 +413,10 @@ p{
 #cont-loading
 {
 	position: absolute;
-	left: calc(50%-50px);
-	top: calc(50%-50px);
-	width: 100px;
-	height: 100px;	
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }
 
 form label 
