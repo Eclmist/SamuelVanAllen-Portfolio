@@ -269,19 +269,27 @@ $(document).ready(function () {
 			case 0:
 				break;
 			case 1:
-				$("#cont-about").css("display", "inline-block");
-				setTimeout(function() {$("#cont-about").css("opacity", 1);}, 10);	
-				$("#sideMenu1").css("background-color", "#58afd3");
+				$("#content-container").empty();
+				$("#content-container").load("About.html");
+
+				//$("#cont-about").css("display", "inline-block");
+				//setTimeout(function() {$("#cont-about").css("opacity", 1);}, 10);	
+				//$("#sideMenu1").css("background-color", "#58afd3");
 				break;
 			case 2:
-				$("#cont-portfolio").css("display", "inline-block");
-				setTimeout(function() {$("#cont-portfolio").css("opacity", 1);}, 10);	
-				$("#sideMenu2").css("background-color", "#58afd3");		
+				$("#content-container").empty();
+				$("#content-container").load("Projects.html");
+				//$("#cont-portfolio").css("display", "inline-block");
+				//setTimeout(function() {$("#cont-portfolio").css("opacity", 1);}, 10);	
+				//$("#sideMenu2").css("background-color", "#58afd3");		
 				break;	
 			case 3:
-				$("#cont-contact").css("display", "inline-block");
-				setTimeout(function() {$("#cont-contact").css("opacity", 1);}, 10);	
-				$("#sideMenu3").css("background-color", "#58afd3");
+				$("#content-container").empty();
+				$("#content-container").load("Contact.html");
+
+				//$("#cont-contact").css("display", "inline-block");
+				//setTimeout(function() {$("#cont-contact").css("opacity", 1);}, 10);	
+				//$("#sideMenu3").css("background-color", "#58afd3");
 				break;	
 			case 4:
 				$("#cont-detail").css("display", "inline-block");
