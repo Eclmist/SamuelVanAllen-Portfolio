@@ -257,22 +257,24 @@ $(document).ready(function () {
 		$(".sideMenu").each(function() {
 			$(this).css("background-color", "transparent");
 		});
+		
+		var toBeLoaded;
 			
 		switch(currentPage) {
 			case 0:
 				break;
 			case 1:
-				elementToAmend.hide().load("About.html").fadeIn();
+				toBeLoaded = "About.html";
 				$("#sideMenu1").css("background-color", "#58afd3");
 
 				//setTimeout(function() {$("#cont-about").css("opacity", 1);}, 10);	
 				break;
 			case 2:
-				elementToAmend.load("Projects.html");
+				toBeLoaded = "Projects.html";
 				$("#sideMenu2").css("background-color", "#58afd3");
 				break;	
 			case 3:
-				elementToAmend.load("Contact.html");
+				toBeLoaded = "Contact.html";
 				$("#sideMenu3").css("background-color", "#58afd3");
 				break;	
 			case 4:
@@ -305,6 +307,9 @@ $(document).ready(function () {
 			default:
 				window.alert("something went wrong!");
 		}
+		
+		elementToAmend.hide().load(toBeLoaded).fadeIn();
+
 	}
 	
 	
