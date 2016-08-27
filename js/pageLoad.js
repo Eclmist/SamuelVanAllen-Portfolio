@@ -250,9 +250,9 @@ $(document).ready(function () {
 	
 	function RefreshContent()
 	{		
-		var elementToAmend = $("#content-container");
-		elementToAmend.find("*").not("#cont-loading").remove();
-		
+		var elementToAmend = $("#content");
+		elementToAmend.empty();
+				
 		//Reseting Side menu background highlight color		
 		$(".sideMenu").each(function() {
 			$(this).css("background-color", "transparent");
