@@ -412,7 +412,7 @@ p{
 
 #cont-loading
 {
-	position: relative;
+	position: fixed;
 	left: 50%;
 	top: 50%;	
 }

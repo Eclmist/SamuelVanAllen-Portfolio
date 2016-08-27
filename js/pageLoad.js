@@ -263,7 +263,7 @@ $(document).ready(function () {
 				break;
 			case 1:
 				elementToAmend.hide().load("About.html").fadeIn();
-				$("#sideMenu2").css("background-color", "#58afd3");
+				$("#sideMenu1").css("background-color", "#58afd3");
 
 				//setTimeout(function() {$("#cont-about").css("opacity", 1);}, 10);	
 				break;
