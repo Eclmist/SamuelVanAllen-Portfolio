@@ -407,8 +407,6 @@ p{
 
 #cont-about, #cont-portfolio, #cont-contact, #cont-detail
 {
-	display: none;
-	opacity: 0;
 	transition: all 0.2s ease-in-out;
 }
 
