@@ -251,7 +251,7 @@ $(document).ready(function () {
 	function RefreshContent()
 	{		
 		var elementToAmend = $("#content-container");
-		elementToAmend.empty();
+		elementToAmend.find("*").not("#cont-loading").remove();
 		
 		//Reseting Side menu background highlight color		
 		$(".sideMenu").each(function() {
@@ -262,18 +262,18 @@ $(document).ready(function () {
 			case 0:
 				break;
 			case 1:
-				elementToAmend.load("About.html");
-				$("#sideMenu1").css("background-color", "#58afd3");
+				elementToAmend.hide().load("About.html").fadeIn();
+				$("#sideMenu2").css("background-color", "#58afd3");
 
 				//setTimeout(function() {$("#cont-about").css("opacity", 1);}, 10);	
 				break;
 			case 2:
 				elementToAmend.load("Projects.html");
-				$("#sideMenu1").css("background-color", "#58afd3");
+				$("#sideMenu2").css("background-color", "#58afd3");
 				break;	
 			case 3:
 				elementToAmend.load("Contact.html");
-				$("#sideMenu1").css("background-color", "#58afd3");
+				$("#sideMenu3").css("background-color", "#58afd3");
 				break;	
 			case 4:
 				$("#cont-detail").css("display", "inline-block");
@@ -347,4 +347,12 @@ $(document).ready(function () {
 		}
 	});
 	
+	$( document ).ajaxStart(function() {
+    	$( "#cont-loading" ).show();
+	});
+
+	$( document ).ajaxStop(function() {
+    	$( "#cont-loading" ).fadeOut();
+	});
+
 });
