@@ -357,7 +357,7 @@ $(document).ready(function () {
 	});
 
 	$( document ).ajaxStop(function() {
-    	$( "#cont-loading" ).fadeOut();
+    	$( "#cont-loading" ).fadeOut(200);
 	});
 
 });
