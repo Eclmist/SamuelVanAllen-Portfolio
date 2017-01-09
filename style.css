@@ -360,7 +360,7 @@ p{
 #skillchart 
 {
 	position: relative;
-	left: calc(45% - 250px);
+	left: calc(40% - 250px);
 	top: 80px;
 	width: 500px;
 }
