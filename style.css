@@ -582,7 +582,6 @@ table {
 }
 .game-container img
 {
-  display: block;
   max-width:860px;
   max-height:460px;
 }
