@@ -580,16 +580,13 @@ table {
 	margin-bottom: 50px;
 		margin-top: 50px;
 }
-.game-container li
-{
-	height: 100% !important;	
-}
 
 
 .game-container img
 {
-  max-width:860px;
-  max-height:460px;
+    width:100%;
+
+
 }
 
 ::-webkit-scrollbar{width: 5px;}
