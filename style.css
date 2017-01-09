@@ -700,7 +700,6 @@ table {
 	#skillchart img
 	{
 		width: 400px;	
-		margin-left: 50px;
 	}
 	
 	#skillchart div
@@ -930,7 +929,6 @@ table {
 	{
 		width: 250px;
 		height: 250px;
-		margin-left: 25px;
 	}
 	
 	.proj-img
@@ -970,7 +968,6 @@ table {
 	
 	#skillchart
 	{
-		margin-left: 115px;
 	}
 	
 	.proj-img
