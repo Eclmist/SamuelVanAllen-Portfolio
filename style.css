@@ -704,6 +704,7 @@ table {
 @media screen and (max-width: 872px) {	
 	#skillchart img
 	{
+		margin: 0 auto;
 		width: 400px;	
 	}
 	
