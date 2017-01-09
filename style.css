@@ -265,20 +265,19 @@ img {
     text-justify: inter-word;
 }
 
-.line
+.line 
 {
 	border-bottom: 1px solid white;
 	width: 200px;
 	margin: 30px 0;
 }
 
-.line-long
-{
-	border-bottom: 1px solid white;
+.line-long{
+	max-width:860px;
+		border-bottom: 1px solid white;
 	width: 100%;
 	margin: 30px 0;
 }
-
 
 h1{
 	color: #6DC4E8;
