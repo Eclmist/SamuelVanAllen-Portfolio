@@ -360,6 +360,7 @@ p{
 #skillchart 
 {
 	display: block;
+	position: relative;
 	margin: 0 auto;
 	width: 500px;
 }
@@ -417,6 +418,7 @@ p{
 	right: 0;
 	top: 0;
 	bottom: 0;
+	width: 
 }
 
 form label 
