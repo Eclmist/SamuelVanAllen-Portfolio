@@ -410,6 +410,11 @@ p{
 	transition: all 0.2s ease-in-out;
 }
 
+#about-text-wrapper
+{
+	max-width: 860px;
+}
+
 #cont-loading
 {
 	position: absolute;
