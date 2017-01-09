@@ -254,10 +254,11 @@ img {
 
 .content
 {
-	width: 90%;
+	width: 80%;
 	height: 100%;
 		
 	margin-left: 10%;
+	padding-right: 10%;
 	overflow: auto;
     text-align: justify;
     text-justify: inter-word;
@@ -348,13 +349,11 @@ p{
 
 #about-photo
 {
-	position: relative;
-	float: right;
-	right: 12%;
-	top: -40px;
+	display:block;
+	margin: 0 auto;
 	width: 250px;
 	height: 250px;
-	border-radius: 2%;
+	border-radius: 50%;
 }
 
 #skillchart 
