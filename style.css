@@ -582,8 +582,11 @@ table {
 }
 .game-container img
 {
-	width: 860px;
-	height: 100%;
+  display: block;
+  max-width:860px;
+  max-height:460px;
+  width: auto;
+  height: auto;
 }
 
 ::-webkit-scrollbar{width: 5px;}
