@@ -580,6 +580,10 @@ table {
 	margin-bottom: 50px;
 		margin-top: 50px;
 }
+.game-container img
+{
+	margin-top: 60%;
+}
 
 ::-webkit-scrollbar{width: 5px;}
 ::-webkit-scrollbar-thumb{background-color: rgba(88,175,211,0.68);}
