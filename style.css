@@ -288,7 +288,7 @@ h3{
 }
 
 p{
-	font-size: 0.8em;
+	font-size: 1em;
 	font-weight:300;
 	margin: 20px 0;
 }
@@ -776,11 +776,6 @@ table {
 	#home_name_text
 	{
 		font-size: 1em;
-	}
-	
-	#about-desc,.proj-desc, #detailed-desc
-	{
-		width: calc(100% - (10vw - 8px));
 	}
 }
 
