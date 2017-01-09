@@ -582,7 +582,8 @@ table {
 }
 .game-container img
 {
-	margin-top: 50%;
+	width: 860px;
+	margin-top: 30%;
 }
 
 ::-webkit-scrollbar{width: 5px;}
