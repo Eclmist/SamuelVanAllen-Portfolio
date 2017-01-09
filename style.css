@@ -585,8 +585,6 @@ table {
   display: block;
   max-width:860px;
   max-height:460px;
-  width: auto;
-  height: auto;
 }
 
 ::-webkit-scrollbar{width: 5px;}
