@@ -324,7 +324,7 @@ p{
 
 #about-desc
 {
-	width: 500px;
+	width: 100%;
 	float: left;
 }
 
@@ -349,7 +349,7 @@ p{
 
 #about-photo
 {
-	display:block;
+	display: block;
 	margin: 0 auto;
 	width: 250px;
 	height: 250px;
@@ -611,17 +611,7 @@ table {
 	{
 		margin-top: 20px;
 	}
-	
-	#about-photo
-	{
-		display: none;
-	}
-	
-	#about-desc
-	{
-		width: calc(100% - ((100vw - 240px) / 10));
-	}
-	
+		
 	#video{
 		float: left;
 		width: 400px;
