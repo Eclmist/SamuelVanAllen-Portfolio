@@ -753,12 +753,7 @@ table {
 		margin: 20px auto;
 		font-size: 1.4em;
 	}
-	
-	#content-container
-	{
-		width: calc(100% - (2.8em + 20px)) !important;
-	}
-	
+		
 	.sideMenu
 	{
 		width: calc(2.8em + 20px) !important;
