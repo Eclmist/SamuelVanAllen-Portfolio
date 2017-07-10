@@ -1,157 +1,21 @@
+        <script src="js/DropdownSelector.js"></script>
 
         <!-- PORTFOLIO -->
         <article id="cont-portfolio" class="content">
+
             <h1>PROJECTS</h1>
             <h3>Some of my past projects are featured below</h3>
+            <select id="drp-catagory">
+                <option value="#Featured">Featured</option>
+                <option value="#Rendering">Rendering</option>
+                <option value="#Games">Games</option>
+                <option value="#LevelDesign">Level Design</option>
+                <option value="#Misc">Non-Serious, Fun Stuff</option>
+                <option value="#All">All</option>
+            </select>   
+
             <div class="line"></div>            
 
-			<div class="game-container">
-            	<h2>Wither</h2>
-                <div class="game-images">
-                    <ul>
-                        <li><img src="image/portfolio/g1-0.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g1-2.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g1-3.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g1-4.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g1-6.png"    alt=""/></li>
-                    </ul>
-                </div>
-
-                <p>Scheduled to be released somewhere in 2017, Wither is a unique fantasy role playing game with a heavy emphasis on its narrative, puzzle solving as well as real time combat.</p>
-                <p>The player will step into the shoes of an unnamed boy who, with the help of his companion Ivy, will take on a mixture of puzzles and face many enemies throughout his journey to bring colour back into a monochromatic world.</p>
-                <p>Graphics is one of the main focuses of Wither. The partially monochromatic setting of the game world and the allowance of interaction with colours in Wither is achieved with many screen spaced image effects written in ShaderLab and CG.</p>
-                <b><p>Role: Project Lead, Graphics Programmer</p></b>
+            <div id="game-container-wrapper">
             </div>
-                        <center><div class="line-long"></div> </center>           
-
-			<div class="game-container">
-            	<h2>V3</h2>
-                <div class="game-images">
-                    <ul>
-                        <li><img src="image/portfolio/g2-1.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g2-2.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g2-3.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g2-4.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g2-6.png"    alt=""/></li>
-                    </ul>
-                </div>
-                
-                <p>V3 is a 2 player co-op rouguelike bullet-hell game.</p>
-                <p>Made during a 30 hour game jam at James Cook University, it was highly inspired by the game "Geometry Wars", V3 was our attempt to create a game that looked visually stunning, yet fit the retro theme of the game jam.</p>
-                <p>Some notable effects implemented in V3 includes a bullet wavefront effect - essentially a multithreaded cloth simulation, as well as a couple of image effects.</p>
-                <b><p>Role: Graphics Programmer, Gameplay Programmer</p></b>
-                <p>Download link: To be released sometime within 2017</p>
-            </div>
-            <center><div class="line-long"></div> </center> 
-            <div class="game-container">
-            	<h2>Valenwood</h2>
-                <div class="game-images">
-                    <ul>
-                        <li><img src="image/portfolio/g3-1.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g3-2.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g3-3.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g3-4.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g3-5.png"    alt=""/></li>
-                    </ul>
-                </div>
-                <p>This is not a Bethesda game.</p>
-                <p>Valenwood was made as part of a assignment at Singapore Polytechnic. Many elements such as the HUD and sound were <i>borrowed</i> from Skyrim.</p>
-                <p>As much as Valenwood was a assignment, it was also a personal challenge to see to what extend can one replicate the graphical fidelity of a AAA title with little time and resource. </p>
-            <b><p>Role: N.A (Solo project)</p></b>
-            <p>Download link: <a href="" target="_blank">here</a></p>
-            </div>
-            <center><div class="line-long"></div> </center> 
-			<div class="game-container">
-            	<h2>Borealis Laboratories</h2>
-                  <div class="game-images">
-                    <ul>
-                        <li><img src="image/portfolio/g4-1.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g4-2.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g4-3.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g4-4.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g4-5.png"    alt=""/></li>
-                    </ul>
-                </div>
-            <p>This is not a Valve game.</p>
-            <p>Borealis Laboratories a level design demo, created using Unreal. Everything from 3D modeling to animations were all made completely from scratch (<i>yes, I didn't steal the GlaDOS</i>). </p>
-            <b><p>Role: N.A (Solo project)</p></b>
-            <p>Download link: <a href="" target="_blank">here</a></p>
-            </div>
-            <br><br>
-            <h3>Fun things on the side</h3>
-            <div class="line"></div>
-			<div class="game-container">
-            	<h2>Desktop Tank Simulator</h2>
-                <div class="game-images">
-                    <ul>
-                        <li><img src="image/portfolio/g4-1.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g4-2.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g4-3.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g4-4.png"    alt=""/></li>
-                        <li><img src="image/portfolio/g4-5.png"    alt=""/></li>
-                    </ul>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut commodo tellus. Mauris ac lectus cursus, fringilla ante vel, posuere massa. Nunc cursus dapibus risus. Donec dictum nibh quis feugiat egestas. Integer luctus mi at erat venenatis, in imperdiet orci volutpat. Maecenas posuere, neque et sagittis rhoncus, lacus risus pretium dolor, ac dignissim mauris arcu ut diam. Nullam finibus fringilla nibh, sed consequat ante facilisis in. Nulla diam dolor, tincidunt sit amet nulla id, imperdiet imperdiet sem. Sed mollis, mauris vel malesuada volutpat, magna augue lobortis turpis, a porttitor magna ante eu sem. Vestibulum tempor gravida velit in ornare. Integer non orci vitae erat bibendum efficitur. Curabitur suscipit posuere odio, sed egestas nulla placerat id. Vivamus egestas metus quis lorem aliquet porttitor. Fusce a feugiat orci, sit amet consectetur metus. Aenean aliquam sem sed est sagittis, accumsan rhoncus ligula faucibus. Nullam vitae turpis vel urna gravida ultricies sed a libero.</p>
-            </div>
-            <center><div class="line-long"></div> </center> 
-            
-            <div class="game-container">
-            	<h2>Minecraft Clone</h2>
-                 <div class="game-images">
-                    <ul>
-                        <li><img src="image/portfolio/game3-2.png"    alt=""/></li>
-                        <li><img src="image/portfolio/game3-1.png"    alt=""/></li>
-                        <li><img src="image/portfolio/game2-2.png"    alt=""/></li>
-                    </ul>
-                </div>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut commodo tellus. Mauris ac lectus cursus, fringilla ante vel, posuere massa. Nunc cursus dapibus risus. Donec dictum nibh quis feugiat egestas. Integer luctus mi at erat venenatis, in imperdiet orci volutpat. Maecenas posuere, neque et sagittis rhoncus, lacus risus pretium dolor, ac dignissim mauris arcu ut diam. Nullam finibus fringilla nibh, sed consequat ante facilisis in. Nulla diam dolor, tincidunt sit amet nulla id, imperdiet imperdiet sem. Sed mollis, mauris vel malesuada volutpat, magna augue lobortis turpis, a porttitor magna ante eu sem. Vestibulum tempor gravida velit in ornare. Integer non orci vitae erat bibendum efficitur. Curabitur suscipit posuere odio, sed egestas nulla placerat id. Vivamus egestas metus quis lorem aliquet porttitor. Fusce a feugiat orci, sit amet consectetur metus. Aenean aliquam sem sed est sagittis, accumsan rhoncus ligula faucibus. Nullam vitae turpis vel urna gravida ultricies sed a libero.</p>
-            </div>
-            <center><div class="line-long"></div> </center> 
-			<div class="game-container">
-            	<h2>Extend</h2>
-                <div class="game-images">
-                    <ul>
-                        <li><img src="image/portfolio/game3-2.png"    alt=""/></li>
-                        <li><img src="image/portfolio/game3-1.png"    alt=""/></li>
-                        <li><img src="image/portfolio/game2-2.png"    alt=""/></li>
-                    </ul>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut commodo tellus. Mauris ac lectus cursus, fringilla ante vel, posuere massa. Nunc cursus dapibus risus. Donec dictum nibh quis feugiat egestas. Integer luctus mi at erat venenatis, in imperdiet orci volutpat. Maecenas posuere, neque et sagittis rhoncus, lacus risus pretium dolor, ac dignissim mauris arcu ut diam. Nullam finibus fringilla nibh, sed consequat ante facilisis in. Nulla diam dolor, tincidunt sit amet nulla id, imperdiet imperdiet sem. Sed mollis, mauris vel malesuada volutpat, magna augue lobortis turpis, a porttitor magna ante eu sem. Vestibulum tempor gravida velit in ornare. Integer non orci vitae erat bibendum efficitur. Curabitur suscipit posuere odio, sed egestas nulla placerat id. Vivamus egestas metus quis lorem aliquet porttitor. Fusce a feugiat orci, sit amet consectetur metus. Aenean aliquam sem sed est sagittis, accumsan rhoncus ligula faucibus. Nullam vitae turpis vel urna gravida ultricies sed a libero.</p>
-            </div>
-            <center><div class="line-long"></div> </center> 
-            
-            			<div class="game-container">
-            	<h2>Egres</h2>
-                <div class="game-images">
-                    <ul>
-                        <li><img src="image/portfolio/game3-2.png"    alt=""/></li>
-                        <li><img src="image/portfolio/game3-1.png"    alt=""/></li>
-                        <li><img src="image/portfolio/game2-2.png"    alt=""/></li>
-                    </ul>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut commodo tellus. Mauris ac lectus cursus, fringilla ante vel, posuere massa. Nunc cursus dapibus risus. Donec dictum nibh quis feugiat egestas. Integer luctus mi at erat venenatis, in imperdiet orci volutpat. Maecenas posuere, neque et sagittis rhoncus, lacus risus pretium dolor, ac dignissim mauris arcu ut diam. Nullam finibus fringilla nibh, sed consequat ante facilisis in. Nulla diam dolor, tincidunt sit amet nulla id, imperdiet imperdiet sem. Sed mollis, mauris vel malesuada volutpat, magna augue lobortis turpis, a porttitor magna ante eu sem. Vestibulum tempor gravida velit in ornare. Integer non orci vitae erat bibendum efficitur. Curabitur suscipit posuere odio, sed egestas nulla placerat id. Vivamus egestas metus quis lorem aliquet porttitor. Fusce a feugiat orci, sit amet consectetur metus. Aenean aliquam sem sed est sagittis, accumsan rhoncus ligula faucibus. Nullam vitae turpis vel urna gravida ultricies sed a libero.</p>
-            </div>
-            <center><div class="line-long"></div> </center> 
-			<div class="game-container">
-            	<h2>Chicken Adventure</h2>
-                <div class="game-images">
-                    <ul>
-                        <li><img src="image/portfolio/game3-2.png"    alt=""/></li>
-                        <li><img src="image/portfolio/game3-1.png"    alt=""/></li>
-                        <li><img src="image/portfolio/game2-2.png"    alt=""/></li>
-                    </ul>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut commodo tellus. Mauris ac lectus cursus, fringilla ante vel, posuere massa. Nunc cursus dapibus risus. Donec dictum nibh quis feugiat egestas. Integer luctus mi at erat venenatis, in imperdiet orci volutpat. Maecenas posuere, neque et sagittis rhoncus, lacus risus pretium dolor, ac dignissim mauris arcu ut diam. Nullam finibus fringilla nibh, sed consequat ante facilisis in. Nulla diam dolor, tincidunt sit amet nulla id, imperdiet imperdiet sem. Sed mollis, mauris vel malesuada volutpat, magna augue lobortis turpis, a porttitor magna ante eu sem. Vestibulum tempor gravida velit in ornare. Integer non orci vitae erat bibendum efficitur. Curabitur suscipit posuere odio, sed egestas nulla placerat id. Vivamus egestas metus quis lorem aliquet porttitor. Fusce a feugiat orci, sit amet consectetur metus. Aenean aliquam sem sed est sagittis, accumsan rhoncus ligula faucibus. Nullam vitae turpis vel urna gravida ultricies sed a libero.</p>
-            </div>
-
-
         </article>	
-        <script src="js/unslider-min.js"></script>
-	<script>
-$('.game-images').unslider(
-{
-autoplay: true,
-arrows: false
-
-	});
-	</script>

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,18 +12,14 @@
         <script src="js/jquery-1.12.0.min.js"></script>
         <script src="js/sketch.min.js"></script>
 		<script src="js/form.js"></script>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+		<script src="js/renderChart.js"></script>
+		<script src="js/projectLoad.js"></script>
     	<script src="js/pageLoad.js"></script>
+        <script src="js/unslider-min.js"></script>
 		<!-- Loading Screen -->
         <script>
-			$(document).ready(function(e) {
-				$(".hover").each(function() {
-					var originalImg = $(this).attr("alt");
-					$(this).hover(
-						function(){ $(this).attr("src", "image/portfolio/" + originalImg +  "-2.png")},
-						function(){ $(this).attr("src", "image/portfolio/" + originalImg + "-1.png")}
-					);
-            	});
-				
+			$(document).ready(function(e) {				
 				$(window).load(function() {
 					setTimeout(function(){
 						$(".se-pre-con").fadeOut("slow");
@@ -40,9 +36,9 @@
     
         <a href="#"><img src="image/Icon/Logo.svg" alt="logo" id="logo"/></a>
          
-        <div id="home_name_text">Developer and game designer<br><span>SAMUEL NG</span></div>
+        <div id="home_name_text">Games Developer / Graphics Enthusiast<br><span>SAMUEL NG</span></div>
         <ul id="social_media">
-            <li><a target="_blank" href="https://www.facebook.com/Eclipsx"><img src="image/Icon/facebook2.png" alt="facebook"/></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/Eclmist"><img src="image/Icon/facebook2.png" alt="facebook"/></a></li>
             <li><a target="_blank" href="https://www.instagram.com/eclmist/"><img src="image/Icon/instagram19.png" alt="instagram"/></a></li>
             <li><a target="_blank" href="https://twitter.com/EclMist"><img src="image/Icon/twitter.png" alt="twitter"/></a></li>
             <li><a target="_blank" href="https://plus.google.com/u/0/110615512311419285245/"><img src="image/Icon/google-plus.png" alt="gplus"/></a></li>
@@ -51,24 +47,24 @@
         <nav id="desktop-nav">
             <div class="navgroup">
                 <img src="image/Icon/About.png" alt="abouticon"/>
-                <a href="#about"><div class="ghostbtn">ABOUT<div class="arrow"></div></div></a>
+                <a href="#about"><div class="ghostbtn">ABOUT</div></a>
             </div><!--
          --><div class="navgroup">
                 <img src="image/Icon/Projects.png" alt="projecticon"/>
-                <a href="#projects"><div class="ghostbtn">PROJECT<div class="arrow"></div></div></a>
+                <a href="#projects"><div class="ghostbtn">PROJECT</div></a>
             </div><!--
          --><div class="navgroup">
                 <img src="image/Icon/Contact.png" alt="contacticon"/>
-                <a href="#contact"><div class="ghostbtn">CONTACT<div class="arrow"></div></div></a>
+                <a href="#contact"><div class="ghostbtn">CONTACT<!--<div class="arrow"></div>--></div></a>
             </div>
-            <div id="slogan">Expect nothing less than perfection.</div>
+            <div id="slogan">Making games look good one fragment at a time</div>
         </nav>
-        <div id="mobile-slogan">Expect nothing less than perfection.</div>        
+        <div id="mobile-slogan"></div><!-- This auto fills from JS -->        
         <div id="mobile-home-photo"><img src="image/about/photo.png" alt="photo" /></div>
         <a href="#about" class="sidebtn"><div id="sideMenu1" class="sideMenu">
             <img src="image/Icon/About.png" alt="abouticon"/>
             <span>About</span>
-            <span class="side-subtext">See what I like to do</span>
+            <span class="side-subtext">What I like to do</span>
         </div></a>
         <a href="#projects" class="sidebtn"><div id="sideMenu2" class="sideMenu">
             <img src="image/Icon/Projects.png" alt="projecticon"/>
@@ -80,6 +76,12 @@
             <span>Contact</span>
             <span class="side-subtext">Drop me a message</span>
         </div></a>
+        <a href="#contact" class="sidebtn"><div id="sideMenu3" class="sideMenu">
+            <img src="image/Icon/Contact.png" alt="contacticon"/>  
+            <span>Contact</span>
+            <span class="side-subtext">Drop me another message</span>
+        </div></a>
+
 
         <div id="sidebar"></div>
         <div id="content-container">
@@ -88,3 +90,5 @@
         </div>
     </body>
 </html>
+
+<!-- ( ͡° ͜ʖ ͡°)  what are you doing here? -->

@@ -46,7 +46,7 @@ function DrawLink(canvas)
 {
 	"use strict";	
 
-	var maxDistance = 300;
+	var maxDistance = 600;
 	var baseOpacity = 0.2;
 
 	for (var i = 0; i < particles.length; i++)

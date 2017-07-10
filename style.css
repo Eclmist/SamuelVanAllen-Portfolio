@@ -20,7 +20,7 @@ img {
 	overflow: hidden !important;
 	position: fixed;
 	
-    background: url(image/Background.jpg);
+    background: url(image/Capture.PNG);
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom !important;
@@ -107,6 +107,7 @@ img {
 
 #desktop-nav {
 	width: 100%;
+	max-width: 700px;
 	position: absolute;
 	margin: auto;
 	left: 0;
@@ -124,17 +125,18 @@ img {
 }
 
 #desktop-nav img:hover{
-	transform: rotate(360deg);
+	transform: rotate(5deg);
 }
 
 #desktop-nav #slogan
 {
 	font-weight:bold;
 	font-size: 1.8em;
-	margin-top: 1em; 
+	margin: 1em 0;
 	opacity: 0.7;
 	transition: all 0.2s ease-in-out;
-	letter-spacing: 2px;	
+	letter-spacing: 2px;
+	text-shadow: 2px 2px #000000;
 }
 
 .ghostbtn
@@ -142,18 +144,18 @@ img {
 	border: 2px white solid;
 	width: 7em;
 	padding: 0.4em 0.5em;
-	text-align: left;
+	text-align: center;
 	font-weight: bold;
 	font-size: 0.8em;
-	color: #58afd3;
+	color: #96efee;
+		text-shadow: 1px 1px #000000;
 	transition: all 0.2s ease-in-out;
 	margin: auto;
 }
 
 .ghostbtn:hover
 {
-	background-color: white;
-	color: #3E7C96;
+	background-color: rgba(255,255,255,0.5);
 }
 
 .ghostbtnraw
@@ -197,6 +199,12 @@ img {
 	margin-bottom: 50px;
 	overflow: scroll;
 
+}
+
+#game-container-wrapper
+{
+	width: 100%;
+	height: 100%;
 }
 
 .sideMenu
@@ -361,7 +369,13 @@ p{
 	margin: 0 auto;
 	width: 250px;
 	height: 250px;
-	border-radius: 50%;
+}
+
+#about-photo img
+{
+	width: 100%;
+	height: 100%;
+		border-radius: 50%;
 }
 
 #skillchart 
@@ -375,36 +389,43 @@ p{
 .skill-ball
 {
 	position: absolute;
-	top: 239px;
+	top: 205px;
+	height: 16px;
 	width: 500px;
+	display: inline-flex;
 }
 
-.skill-ball img{
+.skill-ball .ball{
 	position: relative;
+	width: 10px;
+	height: 10px;
+	margin: auto 0;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 50%;
 }
 
 
-#ball1 img{
-	left: 4px;
+#ball1 .ball{
+	left: 32px;
 	animation:spin 5s linear infinite;	
 }
 #ball1 {	animation:spin 2.32s linear infinite; }
 
-#ball2 img{
-	left: 69px;
+#ball2 .ball{
+	left: 96px;
 	animation:spin 5s linear infinite;	
 }
 #ball2 {	animation:spin 1.32s linear infinite; }
 
-#ball3 img{
-	left: 135px;
+#ball3 .ball{
+	left: 160px;
 	animation:spin 5s linear infinite;
 }
 #ball3 {	animation:spin 2.12s linear infinite; }
 
 
-#ball4 img{
-	left: 194px;
+#ball4 .ball{
+	left: 224px;
 	animation:spin 5s linear infinite;
 }
 #ball4 {	animation:spin 3.5s linear infinite; }
@@ -465,7 +486,7 @@ form #submit
 
 form #submit:hover
 {
-	background-color: white;
+	/*background-color: white;*/
 }
 
 form .form-msg
@@ -552,6 +573,7 @@ table {
 #mobile-slogan, #mobile-home-photo
 {
 	display: none;
+	    text-shadow: 2px 2px #000000;
 }
 
 .no-js #loader { display: none;  }
@@ -585,8 +607,8 @@ table {
 .game-container img
 {
     width:100%;
-
-
+	max-height: 480px;
+  	object-fit: cover;
 }
 
 ::-webkit-scrollbar{width: 5px;}
@@ -1025,3 +1047,84 @@ table {
 	}
 }
 
+/* Dropdown Selectors */
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin-top: 1em;
+  font-size: 16px;
+  color: #fff;
+  width: 220px;
+  height: 40px;
+    border: 1px solid #58afd3;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  padding: 8px 15px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+}
+.select-styled:hover {
+  background-color: #58afd3;
+}
+.select-styled:active, .select-styled.active {
+  background-color: #58afd3;
+}
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: rgba(0,0,0, 0.9);
+}
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.select-options li:hover {
+  color: #000;
+  background: #fff;
+}
+.select-options li[rel="hide"] {
+  display: none;
+}
