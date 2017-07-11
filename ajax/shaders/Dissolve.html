@@ -1,0 +1,16 @@
+<div class="game-container">
+    <h2>Dissolve</h2>
+    
+    <img src="image/portfolio/shaders/dissolve/dissolve.gif" alt=""/>
+
+    <p><b>Made as part of the game Wither.</b></p>
+    <p>Dissolve is a frament shader that masks the mesh based on perlin noise, and applies a color ramp to edges.</p>
+    <p>This effect is achieved with main 2 steps: </p>
+    <ul class="steps">
+        <li>Fragments are discarded based on perlin noise</li>
+        <li>An edge ramp is sampled using the fragment's current value on the noise texture.</li>
+    </ul>
+    <p>
+        Unity's surface shader wrapper is used to enable forward shadows that account for discarded pixels.
+    </p>
+</div>

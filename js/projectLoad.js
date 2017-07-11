@@ -7,10 +7,10 @@ var currentProjectPage = -1;
 // 5 = All
 
 var featured = ["fyp", "FantasyVillage", "Wither"];
-var rendering = ["shaders/SaturationMask", "shaders/Pulse", "shaders/Distortion", "OpenGL"];
+var rendering = ["shaders/SwordIntersection", "shaders/SaturationMask", "shaders/Pulse", "shaders/SSLF", "shaders/Distortion", "shaders/Dissolve"];
 var games = ["fyp", "Wither", "V3", "Valenwood"];
 var leveldesign = ["FantasyVillage", "BorealisLaboratories"];
-var misc = ["DownloadMoreRem", "ChickenAdventure", "Egres", "Asteroids"];
+var misc = ["DownloadMoreRem", "OpenGL", "ChickenAdventure", "Egres", "Asteroids"];
 
 function ChangeProjectPage(targetProjectPage)
 {
@@ -39,7 +39,7 @@ function ChangeProjectPage(targetProjectPage)
 			break;
 		default:
 			targetPageArray = [];
-			targetPageArray = targetPageArray.concat.apply(targetPageArray, [rendering, games, leveldesign, misc]);
+			targetPageArray = targetPageArray.concat.apply(targetPageArray, [games, leveldesign, misc]);
 			break;
 	}
 

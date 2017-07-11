@@ -1,0 +1,21 @@
+<div class="game-container">
+    <h2>Screen Space Lens Flares</h2>
+    
+    <div class="game-images">
+        <ul>
+            <li><img src="image/portfolio/shaders/sslf/1.gif" alt=""/></li>
+            <li><img src="image/portfolio/shaders/sslf/2.gif" alt=""/></li>
+            <li><img src="image/portfolio/shaders/sslf/3.gif" alt=""/></li>
+        </ul>
+    </div>
+
+    <p><b>Made as part of the game Wither.</b></p>
+    <p>Inspired by the game Inside, this image effect draws lens flares directly to the rendered image. This has several advantages. As the depth buffer is used to determine occlusion, accurate colliders does not need to be present. Occlusion is also much more accurate as multiple sample points can be used..</p>
+    <p>Steps to render involves: </p>
+    <ul class="steps">
+        <li>Determine the location to position lens flare texture</li>
+        <li>Sample the depth texture at points around the center of the texture </li>
+        <li>Modify opacity accordingly</li>
+    </ul>
+    <p>For a smooth transition between opacity, multiple points can be checked for occlusion. In our case, we used 5 different points.</p>
+</div>
