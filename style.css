@@ -1128,3 +1128,15 @@ table {
 .select-options li[rel="hide"] {
   display: none;
 }
+
+.steps li
+{
+	font-size: 0.9em !important;
+	padding-top:1em;
+}
+
+.steps
+{
+	padding-left: 5%;
+	width: 80%;
+}

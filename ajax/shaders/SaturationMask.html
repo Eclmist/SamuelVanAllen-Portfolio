@@ -1,0 +1,13 @@
+<div class="game-container">
+    <h2>Stencil Saturation Mask</h2>
+    <img src="image/portfolio/shaders/stencilmask/anim.gif"    alt=""/>
+
+    <p><b>Made as part of the game Wither.</b></p>
+    <p>Stencil Saturation Mask is a screen space image effect that selectively desaturates parts of the rendered frame. In the game Wither, this effect is used to allow the player to spread colors from his feet. </p>
+    <p>This effect is achieved with 2 main steps: </p>
+    <ul class="steps">
+        <li>Draw invisible stencil masks to the screen. (Particle Systems were used in the case of Wither, to allow for instancing) </li>
+        <li>Desaturate the rendered frame while sampling the stencil buffer</li>
+    </ul>
+    <p>Some workarounds had to be used in <i>Unity</i> specifically, as the stencil buffer is cleared after the lighting pass. We can render the masks to a seperate buffer.</p>
+</div>

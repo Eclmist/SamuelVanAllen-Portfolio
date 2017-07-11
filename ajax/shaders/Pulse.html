@@ -1,0 +1,22 @@
+<div class="game-container">
+    <h2>Pulse</h2>
+    
+    <div class="game-images">
+        <ul>
+            <li><img src="image/portfolio/shaders/pulse/pulse.gif" alt=""/></li>
+            <li><img src="image/portfolio/shaders/pulse/pulse_mask.gif" alt=""/></li>
+        </ul>
+    </div>
+
+    <p><b>Made as part of the game Wither.</b></p>
+    <p>Pulse also writes to the saturation mask described above using fragment to world space arithmetics.</p>
+    <p>This effect is achieved with 3 steps: </p>
+    <ul class="steps">
+        <li>Calculate viewport position of starting point of pulse</li>
+        <li>Sample depth texture and calculate world position of each fragment using camera's position</li>
+        <li>Compare distance and write value to saturation mask accordingly. UV positions per fragment is also offset to produce a distortion effect along the edges of the pulse</li>
+    </ul>
+    <p>
+        A sphere collider also expands at the same rate and triggers code to make invisible objects glow.
+    </p>
+</div>

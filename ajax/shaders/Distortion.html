@@ -1,0 +1,21 @@
+<div class="game-container">
+    <h2>Distortion Sphere</h2>
+    
+    <div class="game-images">
+        <ul>
+            <li><img src="image/portfolio/shaders/distortion/1.gif" alt=""/></li>
+            <li><img src="image/portfolio/shaders/distortion/2.gif" alt=""/></li>
+            <li><img src="image/portfolio/shaders/distortion/3.gif" alt=""/></li>
+            <li><img src="image/portfolio/shaders/distortion/4.gif" alt=""/></li>
+        </ul>
+    </div>
+
+    <p><b>Made as part of the game Wither.</b></p>
+    <p>This fragment shader produces a distorted sphere effect.</p>
+    <p>Steps to render involves: </p>
+    <ul class="steps">
+        <li>Render intersection highlights by sampling depth texture and comparing against fragment depth</li>
+        <li>Animate fragment UV against time, to scroll a normal map across the sphere. THe sphere can be specially UV mapped to create different scrolling effects</li>
+        <li>Render texture behind the sphere using <i>Grab Pass</i> with offset'ed uvs to produce distortion effect</li>
+    </ul>
+</div>
