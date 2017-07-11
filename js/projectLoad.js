@@ -16,7 +16,6 @@ function ChangeProjectPage(targetProjectPage)
 {
 	var elementToAmend = $("#game-container-wrapper");
 	elementToAmend.empty();
-
 	currentProjectPage = targetProjectPage;
 
 	var targetPageArray;
@@ -68,7 +67,8 @@ function ChangeProjectPage(targetProjectPage)
 	$('.game-images').unslider(
 	{
 		autoplay: true,
-		arrows: false
+		arrows: true,
+		infinite: true
 	});
 }
 

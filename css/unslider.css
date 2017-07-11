@@ -1,1 +1,52 @@
-.unslider{overflow:auto;margin:0;padding:0}.unslider-wrap{position:relative}.unslider-wrap.unslider-carousel>li{float:left}.unslider-vertical>ul{height:100%}.unslider-vertical li{float:none;width:100%}.unslider-fade{position:relative}.unslider-fade .unslider-wrap li{position:absolute;left:0;top:0;right:0;z-index:8}.unslider-fade .unslider-wrap li.unslider-active{z-index:10}.unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none}.unslider-arrow{position:absolute;left:20px;z-index:2;cursor:pointer}.unslider-arrow.next{left:auto;right:20px}
+
+.unslider-arrow
+{
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	height: calc(100% - 27px);
+	width: 20%;
+	text-indent: -999em;
+	overflow:hidden;
+	background-color: rgba(0,0,0,.2) no-repeat 50% 50%;
+	background-size: auto;
+	cursor: pointer;
+	background-attachment:scroll;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	background-origin: padding-box;
+	   background-repeat: no-repeat;;
+}
+
+.unslider-arrow:hover
+{
+	background-color: rgba(255,255,255,0.1);
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQVR4AU3OISBEQQBAwS0AACS9NxqQgCZpkiYBVddFvWhAAUABAPQCAGC4g/0vTnrBqCfDIZl70J+kMUBPpEwT4FNXxBxz4F1HxHyr4EVTxBLb4EFNxEon4CJSlVNw9AcV9sC16h8osgke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg==');
+
+
+}
+
+.next
+{
+	right: 0;
+}
+
+
+.prev
+{
+
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.unslider
+{
+	position: relative;
+	overflow-y: hidden !important;
+}
+
+.unslider-nav
+{
+}
+
+.unslider{overflow:auto;margin:0;padding:0}.unslider-wrap{position:relative}.unslider-wrap.unslider-carousel>li{float:left}.unslider-vertical>ul{height:100%}.unslider-vertical li{float:none;width:100%}.unslider-fade{position:relative}.unslider-fade .unslider-wrap li{position:absolute;left:0;top:0;right:0;z-index:8}.unslider-fade .unslider-wrap li.unslider-active{z-index:10}.unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none}
