@@ -9,5 +9,5 @@
         <li>Draw invisible stencil masks to the screen. (Particle Systems were used in the case of Wither, to allow for instancing) </li>
         <li>Desaturate the rendered frame while sampling the stencil buffer</li>
     </ul>
-    <p>Some workarounds had to be used in <i>Unity</i> specifically, as the stencil buffer is cleared after the lighting pass. We can render the masks to a seperate buffer.</p>
+    <p>Some workarounds had to be used in <i>Unity</i> specifically, as the stencil buffer is cleared after the lighting pass. We can, in this case, render the mask to a seperate buffer. I described this issue (and a solution) <a href="https://gamedev.stackexchange.com/questions/132045/selective-image-effects-with-stencils" target="_blank">here</a>.</p>
 </div>

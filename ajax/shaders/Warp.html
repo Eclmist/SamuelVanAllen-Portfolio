@@ -1,0 +1,30 @@
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=903698446367672";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="game-container">
+    <h2>Warp</h2>
+    
+<div class="fb-video" data-href="https://www.facebook.com/Eclmist/videos/1315742091819217/" data-width="860" data-show-text="false"><blockquote cite="https://www.facebook.com/Eclmist/videos/1315742091819217/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Eclmist/videos/1315742091819217/"></a><p>Spent a few hours creating this neat effect
+Don&#039;t mind the copyrighted music - Copyright Act Section 35(2)(a) - Non-commercial, educational purpose</p>Posted by <a href="#" role="button">Samuel Ng</a> on Saturday, February 18, 2017</blockquote></div>
+
+    <p>Inspired by Dishonored 2</p>
+    <p>This is a effect that allows the player to warp from one <i>space/time</i> to another. To achieve this effect, 2 similar levels are stacked on top of each other, with one camera rendering for each level seperately. The secondary camers (whichever one is not rendering from the head of the player), renders to a seperate texture. A crystal is used to see into the alternate world, and renders with a shader that samples the rendertexture of the secondary camera.</p>
+    
+    <p>Essentially: </p>
+    <ul class="steps">
+        <li>Have a second, identical camera render something somewhere else, into a texture</li>
+        <li>Move this second camera as the primary camera moves </li>
+        <li>Draw camera 2's texture to somewhere on the screen (Or onto a material in this case)</li>
+        <li>Switch the 2 cameras around to warp</li>
+    </ul>
+
+    <p>Camera FOV, saturation, and etc are animated, and the player's position is shifted into the secondary level when the effect is triggered. 
+</div>
