@@ -10,7 +10,7 @@ var featured = ["fyp", "FantasyVillage", "Wither"];
 var rendering = ["shaders/SwordIntersection", "shaders/SaturationMask",  "shaders/Water", "shaders/Warp", "shaders/SSLF",  "shaders/Pulse", "shaders/Distortion", "shaders/Dissolve"];
 var games = ["fyp", "Wither", "V3", "Valenwood"];
 var leveldesign = ["FantasyVillage", "BorealisLaboratories"];
-var misc = ["DownloadMoreRem", "OpenGL", "ChickenAdventure", "Egres", "Asteroids"];
+var misc = ["DownloadMoreRem", "OpenGL", "Room", "ChickenAdventure", "Egres", "Asteroids"];
 
 function ChangeProjectPage(targetProjectPage)
 {
