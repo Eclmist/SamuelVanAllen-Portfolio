@@ -7,7 +7,7 @@ var currentProjectPage = -1;
 // 5 = All
 
 var featured = ["fyp", "FantasyVillage", "Wither"];
-var rendering = ["shaders/SaturationMask", "shaders/Water", "shaders/SwordIntersection", "shaders/Warp", "Room", "shaders/SSLF", "OpenGL", "shaders/Pulse", "shaders/Distortion", "shaders/Dissolve"];
+var rendering = ["shaders/WorldGlitch", "shaders/CubemapPortals", "shaders/OutlineGlow", "shaders/SobelEdgeDetection", "shaders/SaturationMask", "shaders/SwordIntersection", "shaders/Water", "shaders/Warp", "Room", "shaders/SSLF", "OpenGL", "shaders/Pulse", "shaders/Distortion", "shaders/Dissolve"];
 var games = ["fyp", "Wither", "V3", "Valenwood"];
 var leveldesign = ["FantasyVillage", "BorealisLaboratories"];
 var misc = ["DownloadMoreRem", "ChickenAdventure", "Egres", "Asteroids"];

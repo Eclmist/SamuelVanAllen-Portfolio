@@ -1,0 +1,21 @@
+<div class="game-container">
+    <h2>Outline Glow</h2>
+    
+    <div class="game-images">
+        <ul>
+            <li><img src="image/portfolio/shaders/outline/0.PNG" alt=""/></li>
+            <li><img src="image/portfolio/shaders/outline/1.PNG" alt=""/></li>
+            <li><img src="image/portfolio/shaders/outline/2.PNG" alt=""/></li>
+            <li><img src="image/portfolio/shaders/outline/3.gif" alt=""/></li>
+        </ul>
+    </div>
+
+    <p><b>Made as part of the game Snowfield.</b></p>
+    <p>This effect allows any objects to be highlighted with any color. As this is a image effect solution, it is easy to apply without any changes to existing object's materials.</p>
+    <p>Steps to render involves: </p>
+    <ul class="steps">
+        <li>Render object to a separate buffer with a flat color replacement shader</li>
+        <li>Downsample and blur the render, then subtracting with the pre-blurred texture</li>
+        <li>Composit onto the normal scene render</li>
+    </ul>
+</div>
