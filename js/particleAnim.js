@@ -67,7 +67,7 @@ function DrawLink(canvas)
 					canvas.lineTo(particles[o].xPos, particles[o].yPos);
 					var distancePercentage = (distance/maxDistance); 
 					var opacity = baseOpacity - distancePercentage;
-					canvas.strokeStyle="rgba(105, 255, 255, " + opacity + ")";
+					canvas.strokeStyle="rgba(255, 255, 150, " + opacity + ")";
 
 					canvas.stroke();
 				}
@@ -89,7 +89,7 @@ function Particle (canvas) {
 		this.yPos += this.yVelocity;
 		this.ctx.beginPath();
 		this.ctx.arc( this.xPos, this.yPos, 1.5, 0, Math.PI * 2);
-		this.ctx.fillStyle = "rgba(255, 255, 255, 0.3)";
+		this.ctx.fillStyle = "rgba(255, 255, 150, 0.3)";
 		this.ctx.fill();
 		
 		if (this.xPos > this.ctx.width || this.xPos < 0)
