@@ -15,10 +15,10 @@ $(document).ready(function () {
         var myChart = new Chart(ctx, {
             type: 'polarArea',
             data: {
-                labels: ["Unity3D", "Shaderlab / CG", "OpenGL", "GLSL",
-                 "Unreal 4", ".NET", "C++", "C#", "Java", "ARMv7"],
+                labels: ["Unity3D", "Shaderlab / CG", "Javascript", "Firebase",
+                 "Unreal 4", ".NET Core", "C++", "C#", "Java", "Vue"],
                 datasets: [{
-                    data: [20, 15, 5, 5, 18, 10, 16, 20, 14, 5],
+                    data: [20, 15, 12, 10, 18, 10, 16, 20, 14, 18],
                     backgroundColor: [
                         'rgba(255, 240, 75, 0.2)',
                         'rgba(141, 232, 69, 0.2)',
