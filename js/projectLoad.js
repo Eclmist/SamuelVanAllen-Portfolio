@@ -39,7 +39,7 @@ function ChangeProjectPage(targetProjectPage)
 			break;
 		default:
 			targetPageArray = [];
-			targetPageArray = targetPageArray.concat.apply(targetPageArray, [games, leveldesign, misc]);
+			targetPageArray = targetPageArray.concat.apply(targetPageArray, [games, rendering, leveldesign, misc]);
 			break;
 	}
 
@@ -66,7 +66,7 @@ function ChangeProjectPage(targetProjectPage)
 
 	$('.game-images').unslider(
 	{
-		autoplay: true,
+		autoplay: false,
 		arrows: true,
 		infinite: true
 	});
