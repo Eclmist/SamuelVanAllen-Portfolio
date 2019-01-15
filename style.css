@@ -20,7 +20,7 @@ img {
 	overflow: hidden !important;
 	position: fixed;
 	
-    background: url(image/Capture.PNG);
+    background: url(image/Capture.png);
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom !important;
