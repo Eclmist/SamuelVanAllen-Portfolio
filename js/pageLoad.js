@@ -104,7 +104,10 @@ $(document).ready(function () {
 		}, 500);
 		
 		setTimeout(function(){
+      if (window.innerWidth <= 630)
 			$(".sideMenu").eq(0).css("left", "0");
+      else
+        $(".sideMenu").eq(0).css("top", "0");
 			if (window.innerWidth <= screenSizeThreshold)
 			{
 				$("#social_media").css("display", "none");					
@@ -112,11 +115,18 @@ $(document).ready(function () {
 		}, 500);
 
 		setTimeout(function(){
+      if (window.innerWidth <= 630)
 			$(".sideMenu").eq(1).css("left", "0");
+      else
+        $(".sideMenu").eq(1).css("top", "0");
 		}, 600);
 
 		setTimeout(function(){
+      if (window.innerWidth <= 630)
 			$(".sideMenu").eq(2).css("left", "0");
+      else {
+        $(".sideMenu").eq(2).css("top", "0");
+      }
 		}, 700);	
 	}
 
@@ -182,15 +192,24 @@ $(document).ready(function () {
 		
 		
 		setTimeout(function(){
-				$(".sideMenu").eq(0).css("left", "-240px");
+      if (window.innerWidth <= 630)
+        $(".sideMenu").eq(0).css("left", "-240px");
+      else
+        $(".sideMenu").eq(0).css("top", "-60px");
 		}, 100);
 
 		setTimeout(function(){
+      if (window.innerWidth <= 630)
 				$(".sideMenu").eq(1).css("left", "-240px");
+      else
+        $(".sideMenu").eq(1).css("top", "-60px");
 		}, 200);
 
 		setTimeout(function(){
+      if (window.innerWidth <= 630)
 				$(".sideMenu").eq(2).css("left", "-240px");
+      else
+        $(".sideMenu").eq(2).css("top", "-60px");
 		}, 300);
 	}
 

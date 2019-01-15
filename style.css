@@ -881,61 +881,108 @@ table {
 
 	}
 	
-	#desktop-nav{
-		display: none;
-	}
 	
-	#desktop-nav #slogan{
-		display: inline;
-	}
-	
-	.sideMenu
+	#sideMenu1, #sideMenu2, #sideMenu3
 	{
-		left: 0 !important;
-	}
+    height: 60px;
+    left: unset !important;
+    top: 0;
+  }
+
+  .sideMenu img
+  {
+    width: 30px;
+    left: 17px;
+  }
+
+  #sideMenu1
+  {
+    right: 130px !important;
+  }
+  #sideMenu2
+  {
+    right: 65px !important;
+  }
+  
+  #sideMenu3
+  {
+    right: 0px !important;
+  }
+
+  #desktop-nav
+  {
+    display: none;
+  }
+
+  .navgroup {
+    margin: 0 !important;
+  }
 	
 	#logo
 	{
-		left:calc(((2.8em + 20px) / 2) - 1.5em);
+    left:calc(((2.8em + 20px) / 2) - 0.75em);
+    top: 16.625px;
 		width: 3em;
 	}
-	
+  
+  #content-container
+  {
+    top: 60px !important;
+    border-top: 2px solid rgb(88, 175, 211);
+    border-left: none !important;
+    width: 100% !important;
+  }
+
 	#sidebar
 	{
-		opacity: 0.8;
+    background-color: #000;
+    opacity: 0.4;
+    height: 60px;
+    width: 100%;
 	}
 	
 	#home_name_text
 	{
 		text-align: center;
-		font-size: 1em;
-		width: 60%;
-		left: calc(50% + (1.4em + 10px));
+		font-size: 1.2em;
+		width: 90%;
+		left: 50%;
 		transform: translateX(-50%);
-		top: 40vh;
+		top: 75vh;
 	}
 	
 	#mobile-slogan
 	{
 		display: block;
 		position: absolute;
-		left: calc(50% + (1em + 10px));
+		left: 50%;
 		transform: translateX(-50%);
-		top: 55vh;
+		top: 50vh;
 		text-align: center;
-		font-size: 1.5em;
-		width: 70%;
-		transition: 0.2s all ease-in-out;
-	}
+		font-size: 2em;
+		width: 80%;
+    transition: 0.2s all ease-in-out;
+    font-weight: bold;
+  }
+  
+  #slogan
+  {
+    display: none !important;
+  }
+
+  #desktop-nav
+  {
+    height: 120px;
+  }
 	
 	#mobile-home-photo
 	{
 		display: block;
 		position: absolute;	
-		left: calc(50% + (1.4em + 10px));
+		left: 50%;
 		transform: translateX(-50%);
 
-		top: 10%;
+		top: 20%;
 		width: 10em;
 		height: 10em;
 		transition: 0.2s all ease-in-out;		
@@ -950,11 +997,17 @@ table {
 	
 	#social_media
 	{
-		left: calc(50% + (1.4em + 2px));
+    left: 50%;
 		transform: translateX(-50%);
 		width: 70%;
 		text-align: center;
-	}
+  }
+  
+  #social_media li
+  {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }
 
 @media screen and (max-width: 584px)
