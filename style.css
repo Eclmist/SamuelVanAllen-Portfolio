@@ -14,7 +14,7 @@ img {
 	-ms-user-select: none;
 }
 
-#body{
+body{
 	height:100%;
   	width:100%;
 	overflow: hidden !important;
@@ -25,6 +25,11 @@ img {
     background-size: cover;
     background-position: center bottom !important;
 	background-attachment: fixed;
+}
+
+body{
+/* Workaround for some mobile browsers */
+min-height:100%;
 }
 
 
