@@ -11,14 +11,13 @@ $(document).ready(function () {
     function RenderCharts()
     {
         var ctx = $("#skillchart2")[0].getContext('2d');
-        //"Unity3D", "Shaderlab/CG","OpenGL", "GLSL", "Unreal 4", ".NET", "C++", "C#", "Java" "ARMv7"
         var myChart = new Chart(ctx, {
             type: 'polarArea',
             data: {
-                labels: ["Unity3D", "Shaderlab / CG", "Javascript", "Firebase",
-                 "Unreal 4", ".NET Core", "C++", "C#", "Java", "Vue"],
+                labels: ["Unity3D", "Shaderlab / CG", "Javascript", "HLSL",
+                 "Unreal 4", "DX11", "C++", "C#", "Java", "GLSL"],
                 datasets: [{
-                    data: [20, 15, 12, 10, 18, 10, 16, 20, 14, 18],
+                    data: [20, 15, 12, 18, 18, 10, 18, 20, 14, 16],
                     backgroundColor: [
                         'rgba(255, 240, 75, 0.2)',
                         'rgba(141, 232, 69, 0.2)',
