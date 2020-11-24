@@ -1,0 +1,20 @@
+<div class="game-container">
+    <h2>Reveal</h2>
+    
+    <div class="game-images">
+        <ul>
+            <li><iframe width="860" height="480" src="https://www.youtube.com/embed/rDqnhC37cAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            <li><iframe width="860" height="480" src="https://www.youtube.com/embed/5ifnxCQvyIo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            <li><img src="image/portfolio/shaders/reveal/wavy_noise.gif" alt=""/></li>
+        </ul>
+    </div>
+
+    <p><b>Made as part of the game Aether.</b></p>
+    <p>Inspired by the similar visual effect in Beyond Eyes, this effect reveals the environment wherever deemed appropriate by design. This method is slightly different in that we make use of a 3D texture as a visibility mask and a compute shader to update the mask texels, rather than through the more inefficient approach of updating vertex colors directly.</p>
+    <p>There are two main components to this effect.</p>
+    <ul class="steps">
+        <li>A 3D texture that is dynamically updated by a compute shader</li>
+        <li>Materials that sample the 3D texture as a mask for visibility.</li>
+    </ul>
+    The rest is a little bit of tech art (glowing, flowing edges with noise and color ramp, etc.)
+</div>
