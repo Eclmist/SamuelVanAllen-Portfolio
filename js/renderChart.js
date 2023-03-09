@@ -15,9 +15,9 @@ $(document).ready(function () {
             type: 'polarArea',
             data: {
                 labels: ["Unity3D", "Shaderlab / CG", "Javascript", "HLSL",
-                 "Unreal 4", "DX11", "C++", "C#", "Java", "GLSL"],
+                 "Unreal 4", "DX12", "C++", "C#", "Java", "GLSL"],
                 datasets: [{
-                    data: [20, 15, 12, 18, 18, 10, 18, 20, 14, 16],
+                    data: [20, 15, 12, 18, 18, 18, 18, 20, 14, 16],
                     backgroundColor: [
                         'rgba(255, 240, 75, 0.2)',
                         'rgba(141, 232, 69, 0.2)',
