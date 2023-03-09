@@ -14,10 +14,10 @@ $(document).ready(function () {
         var myChart = new Chart(ctx, {
             type: 'polarArea',
             data: {
-                labels: ["Unity3D", "Shaderlab / CG", "Javascript", "HLSL",
-                 "Unreal 4", "DX12", "C++", "C#", "Java", "GLSL"],
+                labels: ["Unity3D", "Shaderlab / CG", "OpenGL", "HLSL",
+                 "Unreal 4", "DirectX12", "C++", "C#", "GLSL"],
                 datasets: [{
-                    data: [20, 15, 12, 18, 18, 18, 18, 20, 14, 16],
+                    data: [20, 15, 12, 18, 18, 18, 20, 18, 16],
                     backgroundColor: [
                         'rgba(255, 240, 75, 0.2)',
                         'rgba(141, 232, 69, 0.2)',
@@ -28,7 +28,6 @@ $(document).ready(function () {
                         'rgba(227, 81, 232, 0.2)',
                         'rgba(255, 108, 101, 0.2)',
                         'rgba(232, 140, 81, 0.2)',
-                        'rgba(255, 208, 101, 0.2)'
                     ],
                     borderColor: [
                         'rgba(255, 240, 75, 1)',
@@ -40,7 +39,6 @@ $(document).ready(function () {
                         'rgba(227, 81, 232, 1)',
                         'rgba(255, 108, 101, 1)',
                         'rgba(232, 140, 81, 1)',
-                        'rgba(255, 208, 101, 1)'
                     ],
                     borderWidth: 1
                 }]
