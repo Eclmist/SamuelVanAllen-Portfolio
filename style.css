@@ -1019,6 +1019,12 @@ table {
     margin-left: 8px;
     margin-right: 8px;
   }
+
+  .content
+  {
+	margin-left: 3% !important;
+    padding-right: 3% !important;
+  }
 }
 
 @media screen and (max-width: 584px)
