@@ -7,7 +7,7 @@ var currentProjectPage = -1;
 // 5 = All
 
 var featured = ["Ether", "Elixir", "SNB", "fyp", "LD-FantasyForest", "FantasyVillage", "Wither"];
-var rendering = ["Ether", "shaders/Reveal", "Elixir", "shaders/WorldGlitch", "shaders/CubemapPortals", "shaders/OutlineGlow", "shaders/SobelEdgeDetection", "shaders/SaturationMask", "shaders/SwordIntersection", "shaders/Water", "shaders/Warp", "Room", "shaders/SSLF", "OpenGL", "shaders/Pulse", "shaders/Distortion", "shaders/Dissolve"];
+var rendering = ["Ether", "shaders/Reveal", "Elixir", "shaders/WorldGlitch", "shaders/CubemapPortals", "shaders/OutlineGlow", "shaders/SobelEdgeDetection", "shaders/SaturationMask", "shaders/SwordIntersection", "shaders/Water", "shaders/SSLF", "OpenGL", "shaders/Pulse", "shaders/Distortion", "shaders/Dissolve"];
 var games = ["SNB", "fyp", "Wither", "V3", "Valenwood"];
 var leveldesign = ["LD-FantasyForest", "FantasyVillage", "BorealisLaboratories"];
 var misc = ["DownloadMoreRem", "ChickenAdventure", "Egres", "Asteroids"];
