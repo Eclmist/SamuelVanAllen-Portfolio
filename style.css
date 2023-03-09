@@ -280,8 +280,6 @@ min-height:100%;
 	margin-left: 10%;
 	padding-right: 10%;
 	overflow: auto;
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 .line 
@@ -1022,8 +1020,9 @@ table {
 
   .content
   {
-	margin-left: 3% !important;
-    padding-right: 3% !important;
+	margin-left: 4% !important;
+    padding-right: 4% !important;
+	width: 92% !important;
   }
 }
 
